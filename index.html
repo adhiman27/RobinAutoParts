@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container_16">
+        <header class="grid_16">
+            <div class="grid_7 alpha logo"><a class="logo" href="index.html">Robin's Auto Parts</a>
+                <div class="grid_7 alpha address">28 Melanie Dr, Brampton, ON L6T 4H7</div>
+                <div class="grid_7 alpha address">PH: 905-792-8822</div>
+            </div>            
+            <div class="grid_9 omega">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>                      
+                    </ul>
+                </nav>
+            </div>            
+        </header>
+        <div class="clear"></div>
+        <div class="grid_16 productlogos">
+            <img src="images/companylogos1.jpg" width="940px" alt="rotating image" id="rotator"/>
+        </div>
+        <div class="clear"></div>
+        <section class="content">
+            <div class="grid_8 alpha">
+                <h1>About Us</h1>
+                <p>
+                    Robin's auto parts is leading aftermarket parts supplier. We have been supplying to the jobbers, muffler shops, tire shops and garages for over last 10 years!
+                    We have very convenient location in Brampton, Ontario, Canada. Our warehouses are strategically located, with close proximity to the highways allowing us to efficiently service customers with our own delivery fleet. We are also located close to our supplier's warehouses, allowing us to pick up products quickly.
+                    Since our foundation in 1999, our focus is to provide all the parts in time and as per the customer specifications. We also carry and are constantly expanding on comprehensive coverage of all of the customer aftermarket needs such as brake, chassis, suspension and engine. Please, take a look at our products page for a complete product range.
+                </p>
+            </div>
+            <div class="grid_8 omega">
+                <a href="products.html"><img id="aboutuspartsimg" src="images/aboutuspartsimage.png" /></a>   <!--aboutuspartsimage -->              
+            </div>            
+        </section>
+        <div class="clear"></div>
+        <section class="content">
+            <div class="grid_8 alpha">
+                <a href="products.html"><img id="aboutuspartsimg" src="images/autoparts.jpg" width="460px" height="240px" /></a>   <!--aboutuspartsimage -->              
+            </div>
+            <div class="grid_8 omega">
+                <a href="products.html"><img id="aboutuspartsimg" src="images/prodcrop.png" width="460px" height="240px" /></a>   <!--aboutuspartsimage -->              
+            </div>                
+        </section>
+        <div class="clear"></div>
+        <footer class="grid_16">           
+            <div>
+                 <a href="index.html">&copy; 2013 Robin's Auto Parts</a>
+            </div>
+        </footer>
+    </div>
+    
+<script type="text/javascript">
+(function() { 
+    var rotator = document.getElementById('rotator');  // change to match image ID 
+    var imageDir = 'images/';                          // change to match images folder 
+    var delayInSeconds = 5;                            // set number of seconds delay
+    // list image names 
+    var images = ['companylogos3.jpg', 'companylogos5.jpg', 'companylogos6.jpg', 'companylogos7.jpg','companylogos8.jpg','companylogos9.jpg','companylogos9a.jpg']; 
+    // don't change below this line 
+    var num = 0; 
+    var changeImage = function() { 
+        var len = images.length; 
+        rotator.src = imageDir + images[num++]; 
+        if (num == len) { 
+            num = 0; 
+        } 
+    }; 
+    setInterval(changeImage, delayInSeconds * 1000); 
+
+})(); 
+
+</script> 
+
+</body>
+</html>
